@@ -18,6 +18,8 @@ Each repository has a live report published from its own CI run, so every number
 
 **[Web-Scraping-Automation-Framework](https://github.com/WolfGung/Web-Scraping-Automation-Framework)** — a scraper that collects two practice sites over HTTP and through a browser, detects changes between nightly runs and publishes the data, the change report, a recording and the test report to GitHub Pages. Shows polite scraping (rate limits, retries, robots.txt), data extraction to CSV and JSON, and scheduled monitoring.
 
+**[Test-Suite-Rescue](https://github.com/WolfGung/Test-Suite-Rescue)** — a deliberately sick test suite and its cured version with the same checks, on Playwright and on Selenium, and the measured difference: twenty runs of each against the same application, reproducible with one command, with a diagnosis of each disease. Shows what fixing flaky tests and reducing run time looks like when it is done, not described.
+
 ## Available for freelance work
 
 Short, well-defined jobs: a test automation framework from scratch, an API test suite for an existing backend, end-to-end tests for a critical flow, fixing flaky tests and reducing run time, setting up CI for existing tests, scrapers and data pipelines.
