@@ -1,4 +1,4 @@
-# Pavel Zhukov
+# Pavel Zhukov Atum
 
 Senior SDET. I build test automation for web applications and APIs — frameworks from scratch, API and end-to-end suites, CI pipelines that run them on every push — and data scrapers with scheduled monitoring.
 
@@ -26,4 +26,4 @@ Short, well-defined jobs: a test automation framework from scratch, an API test 
 
 Guru profile: https://www.guru.com/freelancers/pavel-zhukov-atum
 
-Time zone UTC+2. I work in writing — a clear task description and a repository link are enough to start.
+Time zone: Central European Time (CET/CEST), so my working hours overlap with Central European business hours. I work in writing — a clear task description and a repository link are enough to start.
