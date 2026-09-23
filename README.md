@@ -1,20 +1,31 @@
 # Pavel Zhukov Atum
 
-Senior SDET. I build test automation for web applications and APIs — frameworks from scratch, API and end-to-end suites, CI pipelines that run them on every push — and data scrapers with scheduled monitoring.
+Senior SDET: I build test automation for web applications and APIs, and fix test suites that teams stopped trusting.
+
+| Project | What it shows | Published results |
+| --- | --- | --- |
+| [Toolshop-Test-Automation-Framework](https://github.com/WolfGung/Toolshop-Test-Automation-Framework) | A test automation framework built from scratch for an online shop, with test design documents | [Allure report](https://wolfgung.github.io/Toolshop-Test-Automation-Framework/) |
+| [Marketplace-Test-Automation-Framework](https://github.com/WolfGung/Marketplace-Test-Automation-Framework) | API and browser tests against a shop shipped in the repository, with a nightly drift check of the public site | [Allure report](https://wolfgung.github.io/Marketplace-Test-Automation-Framework/) |
+| [Web-Scraping-Automation-Framework](https://github.com/WolfGung/Web-Scraping-Automation-Framework) | A nightly scraper of three sources that reports what changed and publishes the data | [Data and report](https://wolfgung.github.io/Web-Scraping-Automation-Framework/) |
+| [Test-Suite-Rescue](https://github.com/WolfGung/Test-Suite-Rescue) | A flaky, slow test suite cured without losing coverage, with twenty measured runs of each version | [Measurements](https://github.com/WolfGung/Test-Suite-Rescue#readme) |
+
+- **Test automation from scratch:** API, browser and end-to-end suites that run in CI on every push.
+- **Fixing what already exists:** flaky tests, slow runs, and suites that need a restart between runs.
+- **Data work:** scrapers and scheduled monitoring with exports to CSV and JSON.
 
 ## Stack
 
 Python, pytest, Playwright, Selenium, httpx, REST API testing, Pydantic, SQLAlchemy, FastAPI, Docker, GitHub Actions, GitLab CI, Allure.
 
-Seven years in test automation, mostly in payments, e-commerce and telecom products.
+Seven years in test automation, mostly in FinTech and payments, e-commerce and marketplaces, cybersecurity, and telecom and VoIP products.
 
 ## Selected work
 
-Each repository has a live report published from its own CI run, so every number in its README can be checked.
+Each repository publishes its results from its own CI run, so every number in its README can be checked.
 
-**[Toolshop-Test-Automation-Framework](https://github.com/WolfGung/Toolshop-Test-Automation-Framework)** — a test framework built from scratch for an online shop: 32 API, browser and end-to-end cases against a public demo shop or a local Docker stand of the same application, with test design documents, page objects and an Allure report on GitHub Pages. Shows the full cycle from requirements analysis to a suite that runs in CI.
+**[Toolshop-Test-Automation-Framework](https://github.com/WolfGung/Toolshop-Test-Automation-Framework)** — a test framework built from scratch for an online shop: API, browser and end-to-end cases against a public demo shop or a local Docker stand of the same application, with test design documents, page objects and an Allure report on GitHub Pages. Shows the full cycle from requirements analysis to a suite that runs in CI.
 
-**[Marketplace-Test-Automation-Framework](https://github.com/WolfGung/Marketplace-Test-Automation-Framework)** — API and browser tests for a marketplace demo site: 24 application cases plus the framework's own checks, a smoke set for every deploy, video and traces for every browser test, and a published Allure report with a trend across runs. Shows an API test suite and end-to-end tests for a checkout flow kept honest by CI.
+**[Marketplace-Test-Automation-Framework](https://github.com/WolfGung/Marketplace-Test-Automation-Framework)** — API and browser tests for a marketplace shop, run against a small stand shipped in the repository, with a smoke set, video and traces for every browser test, and a published Allure report with a trend across runs. Shows an API test suite and end-to-end tests for a checkout flow kept honest by CI.
 
 **[Web-Scraping-Automation-Framework](https://github.com/WolfGung/Web-Scraping-Automation-Framework)** — a scraper that collects two practice sites and a demo store of its own, over HTTP and through a browser, detects changes between nightly runs and publishes the data, the change report, a recording and the test report to GitHub Pages. Shows polite scraping (rate limits, retries, robots.txt), data extraction to CSV and JSON, and scheduled monitoring.
 
