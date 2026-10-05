@@ -10,16 +10,18 @@ Senior SDET: I build test automation for web applications and APIs, and fix test
 | [Test-Suite-Rescue](https://github.com/WolfGung/Test-Suite-Rescue) | A flaky, slow test suite cured without losing coverage, with twenty measured runs of each version | [Measurements](https://github.com/WolfGung/Test-Suite-Rescue#readme) |
 | [API-Test-Generator](https://github.com/WolfGung/API-Test-Generator) | A command-line tool that turns an OpenAPI document or a Postman collection into a runnable pytest suite | [Generated suites](https://github.com/WolfGung/API-Test-Generator/tree/main/examples) |
 | [Accessibility-Test-Automation-Framework](https://github.com/WolfGung/Accessibility-Test-Automation-Framework) | An axe-core scan and keyboard-only checks against a shop in an accessible and a deliberately broken mode, every finding mapped to a WCAG criterion | [Findings and report](https://wolfgung.github.io/Accessibility-Test-Automation-Framework/) |
+| [LLM-Evaluation-Framework](https://github.com/WolfGung/LLM-Evaluation-Framework) | A RAG support assistant and ticket triage evaluated in layers, with an LLM judge measured against human labels and a regression gate in CI | [Results and report](https://wolfgung.github.io/LLM-Evaluation-Framework/) |
 
 - **Test automation from scratch:** API, browser and end-to-end suites that run in CI on every push.
 - **Fixing what already exists:** flaky tests, slow runs, and suites that need a restart between runs.
 - **Data work:** scrapers and scheduled monitoring with exports to CSV and JSON.
 - **Accessibility testing:** an axe-core scan and keyboard-only checks in CI, findings mapped to WCAG 2.1 AA criteria, and a manual checklist for what automation cannot see.
 - **API suites from the documents you already have:** an OpenAPI document or a Postman collection turned into a pytest suite that runs in CI.
+- **Testing AI features:** a chatbot or RAG assistant evaluated in CI with rules, reference checks, prompt-injection and data-leak cases, repeat-run stability, and an LLM judge measured against human labels.
 
 ## Stack
 
-Python, pytest, Playwright, Selenium, httpx, REST API testing, OpenAPI, Postman, axe-core, WCAG 2.1, Pydantic, SQLAlchemy, FastAPI, Docker, GitHub Actions, GitLab CI, Allure.
+Python, pytest, Playwright, Selenium, httpx, REST API testing, OpenAPI, Postman, axe-core, WCAG 2.1, LLM evaluation (RAG, LLM-as-a-judge), OpenRouter, Pydantic, SQLAlchemy, FastAPI, Docker, GitHub Actions, GitLab CI, Allure.
 
 Seven years in test automation, mostly in FinTech and payments, e-commerce and marketplaces, cybersecurity, and telecom and VoIP products.
 
@@ -39,9 +41,11 @@ Each repository publishes its results from its own CI run, so every number in it
 
 **[Accessibility-Test-Automation-Framework](https://github.com/WolfGung/Accessibility-Test-Automation-Framework)** — an axe-core scan and keyboard-only checks against a small shop served in an accessible mode and in a mode with ten planted WCAG 2.1 AA violations, run in both modes on every push: the scan must find what it can, the keyboard checks the rest, and each violation's detection is established by the tests, not asserted. What neither layer can see goes to a manual checklist. Shows accessibility checks wired into CI with findings mapped to criteria, and honest limits.
 
+**[LLM-Evaluation-Framework](https://github.com/WolfGung/LLM-Evaluation-Framework)** — a support assistant over a small knowledge base and a ticket triage feature, each with two prompt versions, evaluated in layers from cheap to expensive: deterministic rules, reference facts and labels, safety cases against prompt injection and data leaks, repeat-run stability, and an LLM judge that is measured itself, against blind human labels and for position bias with swapped pairs. A real recording of 706 calls to free models replays in CI, so every run is free and a regression gate fails the build when a prompt or model change makes things worse. Shows how to evaluate LLM features and when an LLM judge can be trusted.
+
 ## Available for freelance work
 
-Short, well-defined jobs: a test automation framework from scratch, an API test suite for an existing backend (from its OpenAPI document or Postman collection), end-to-end tests for a critical flow, accessibility testing against WCAG 2.1 AA, fixing flaky tests and reducing run time, setting up CI for existing tests, scrapers and data pipelines.
+Short, well-defined jobs: a test automation framework from scratch, an API test suite for an existing backend (from its OpenAPI document or Postman collection), end-to-end tests for a critical flow, accessibility testing against WCAG 2.1 AA, testing LLM features such as chatbots and RAG assistants, fixing flaky tests and reducing run time, setting up CI for existing tests, scrapers and data pipelines.
 
 Guru profile: https://www.guru.com/freelancers/pavel-zhukov-atum
 
