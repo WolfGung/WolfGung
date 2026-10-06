@@ -47,6 +47,8 @@ Each repository publishes its results from its own CI run, so every number in it
 
 Short, well-defined jobs: a test automation framework from scratch, an API test suite for an existing backend (from its OpenAPI document or Postman collection), end-to-end tests for a critical flow, accessibility testing against WCAG 2.1 AA, testing LLM features such as chatbots and RAG assistants, fixing flaky tests and reducing run time, setting up CI for existing tests, scrapers and data pipelines.
 
+I use AI coding assistants (Claude Code, Codex) to move faster. Design decisions, test design and code review stay with me, and every change ships with tests. With your code and data I follow your policy: if AI tools are not allowed on your project, I don't use them.
+
 Guru profile: https://www.guru.com/freelancers/pavel-zhukov-atum
 
 Time zone: Central European Time (CET/CEST), so my working hours overlap with Central European business hours. I work in writing — a clear task description and a repository link are enough to start.
