@@ -11,6 +11,7 @@ Senior SDET: I build test automation for web applications and APIs, and fix test
 | [API-Test-Generator](https://github.com/WolfGung/API-Test-Generator) | A command-line tool that turns an OpenAPI document or a Postman collection into a runnable pytest suite | [Generated suites](https://github.com/WolfGung/API-Test-Generator/tree/main/examples) |
 | [Accessibility-Test-Automation-Framework](https://github.com/WolfGung/Accessibility-Test-Automation-Framework) | An axe-core scan and keyboard-only checks against a shop in an accessible and a deliberately broken mode, every finding mapped to a WCAG criterion | [Findings and report](https://wolfgung.github.io/Accessibility-Test-Automation-Framework/) |
 | [LLM-Evaluation-Framework](https://github.com/WolfGung/LLM-Evaluation-Framework) | A RAG support assistant and ticket triage evaluated in layers, with an LLM judge measured against human labels and a regression gate in CI | [Results and report](https://wolfgung.github.io/LLM-Evaluation-Framework/) |
+| [Load-Testing-Automation-Framework](https://github.com/WolfGung/Load-Testing-Automation-Framework) | Python and Locust API load tests that identify a catalogue bottleneck and measure its repair under the same workload | [Measurements and report](https://wolfgung.github.io/Load-Testing-Automation-Framework/) |
 
 - **Test automation from scratch:** API, browser and end-to-end suites that run in CI on every push.
 - **Fixing what already exists:** flaky tests, slow runs, and suites that need a restart between runs.
@@ -18,16 +19,17 @@ Senior SDET: I build test automation for web applications and APIs, and fix test
 - **Accessibility testing:** an axe-core scan and keyboard-only checks in CI, findings mapped to WCAG 2.1 AA criteria, and a manual checklist for what automation cannot see.
 - **API suites from the documents you already have:** an OpenAPI document or a Postman collection turned into a pytest suite that runs in CI.
 - **Testing AI features:** a chatbot or RAG assistant evaluated in CI with rules, reference checks, prompt-injection and data-leak cases, repeat-run stability, and an LLM judge measured against human labels.
+- **Load and performance testing:** API business flows under load, stress, spike and soak workloads, bottleneck diagnosis, measured repairs, and repeatable performance checks.
 
 ## Stack
 
-Python, pytest, Playwright, Selenium, httpx, REST API testing, OpenAPI, Postman, axe-core, WCAG 2.1, LLM evaluation (RAG, LLM-as-a-judge), OpenRouter, Pydantic, SQLAlchemy, FastAPI, Docker, GitHub Actions, GitLab CI, Allure.
+Python, pytest, Playwright, Selenium, httpx, Locust, API load testing, REST API testing, OpenAPI, Postman, axe-core, WCAG 2.1, LLM evaluation (RAG, LLM-as-a-judge), OpenRouter, Pydantic, SQLAlchemy, FastAPI, Docker, GitHub Actions, GitLab CI, Allure.
 
 Seven years in test automation, mostly in FinTech and payments, e-commerce and marketplaces, cybersecurity, and telecom and VoIP products.
 
 ## Selected work
 
-Each repository publishes its results from its own CI run, so every number in its README can be checked.
+Each repository publishes test results or measured evidence, so every number in its README can be checked.
 
 **[Toolshop-Test-Automation-Framework](https://github.com/WolfGung/Toolshop-Test-Automation-Framework)** — a test framework built from scratch for an online shop: API, browser and end-to-end cases against a public demo shop or a local Docker stand of the same application, with test design documents, page objects and an Allure report on GitHub Pages. Shows the full cycle from requirements analysis to a suite that runs in CI.
 
@@ -43,9 +45,11 @@ Each repository publishes its results from its own CI run, so every number in it
 
 **[LLM-Evaluation-Framework](https://github.com/WolfGung/LLM-Evaluation-Framework)** — a support assistant over a small knowledge base and a ticket triage feature, each with two prompt versions, evaluated in layers from cheap to expensive: deterministic rules, reference facts and labels, safety cases against prompt injection and data leaks, repeat-run stability, and an LLM judge that is measured itself, against blind human labels and for position bias with swapped pairs. A real recording of 706 calls to free models replays in CI, so every run is free and a regression gate fails the build when a prompt or model change makes things worse. Shows how to evaluate LLM features and when an LLM judge can be trusted.
 
+**[Load-Testing-Automation-Framework](https://github.com/WolfGung/Load-Testing-Automation-Framework)** — Python and Locust tests against a local FastAPI shop: browsing and checkout with isolated sessions and carts, response validation, and smoke, load, stress, spike and soak profiles. A measured comparison diagnoses downstream pool contention in the catalogue and checks a batching repair under the same workload. The published report includes per-operation percentiles, throughput, errors, resource charts and raw CSV evidence; configurable thresholds provide a repeatable performance gate. Shows how to find an API bottleneck, measure its repair and hand over tests and evidence a client can reproduce.
+
 ## Available for freelance work
 
-Short, well-defined jobs: a test automation framework from scratch, an API test suite for an existing backend (from its OpenAPI document or Postman collection), end-to-end tests for a critical flow, accessibility testing against WCAG 2.1 AA, testing LLM features such as chatbots and RAG assistants, fixing flaky tests and reducing run time, setting up CI for existing tests, scrapers and data pipelines.
+Short, well-defined jobs: a test automation framework from scratch, an API test suite for an existing backend (from its OpenAPI document or Postman collection), end-to-end tests for a critical flow, API load and performance testing with bottleneck diagnosis, accessibility testing against WCAG 2.1 AA, testing LLM features such as chatbots and RAG assistants, fixing flaky tests and reducing run time, setting up CI for existing tests, scrapers and data pipelines.
 
 I use AI coding assistants (Claude Code, Codex) to move faster. Design decisions, test design and code review stay with me, and every change ships with tests. With your code and data I follow your policy: if AI tools are not allowed on your project, I don't use them.
 
